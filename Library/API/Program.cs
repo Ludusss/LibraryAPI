@@ -82,3 +82,6 @@ using (var scope = app.Services.CreateScope())
 }
 
 app.Run();
+
+// Add this for test project compatibility
+public partial class Program { }

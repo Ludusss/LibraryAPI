@@ -16,10 +16,7 @@ public class Borrowing : BaseEntity
     public Borrower Borrower { get; private set; } = null!;
     public Book Book { get; private set; } = null!;
 
-    private Borrowing(Borrower borrower)
-    {
-        Borrower = borrower;
-    } // For EF Core
+    private Borrowing() { } // For EF Core
 
     public Borrowing(int borrowerId, int bookId, DateTime borrowDate, int borrowDurationDays = 14)
     {

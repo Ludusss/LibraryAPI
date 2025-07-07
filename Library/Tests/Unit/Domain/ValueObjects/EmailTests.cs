@@ -28,7 +28,7 @@ public class EmailTests
     [InlineData("test@")]
     [InlineData("test.example.com")]
     [InlineData("test@@example.com")]
-    public void Create_WithInvalidEmail_ShouldThrowArgumentException(string invalidEmail)
+    public void Create_WithInvalidEmail_ShouldThrowArgumentException(string? invalidEmail)
     {
         // Act & Assert
         var action = () => Email.Create(invalidEmail);

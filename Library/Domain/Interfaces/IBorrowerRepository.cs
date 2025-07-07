@@ -1,4 +1,5 @@
 using Domain.Entities;
+using Domain.ValueObjects;
 
 namespace Domain.Interfaces;
 
@@ -11,8 +12,7 @@ public interface IBorrowerRepository
     Task<Borrower> CreateBorrowerAsync(Borrower borrower);
     Task<Borrower> UpdateBorrowerAsync(Borrower borrower);
     Task<bool> DeleteBorrowerAsync(int id);
-    Task<bool> BorrowerExistsAsync(int id);
-    Task<bool> EmailExistsAsync(string email);
+    Task<bool> EmailExistsAsync(Email email);
 
     // Borrower analytics
     Task<List<(Borrower Borrower, int BorrowCount)>> GetTopBorrowersAsync(

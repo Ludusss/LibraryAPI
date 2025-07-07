@@ -1,5 +1,6 @@
 using Domain.Entities;
 using Domain.Interfaces;
+using Domain.ValueObjects;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Database.Repositories;
@@ -53,9 +54,9 @@ public class BorrowerRepository(LibraryDbContext context) : IBorrowerRepository
         return await context.Borrowers.AnyAsync(b => b.Id == id);
     }
 
-    public async Task<bool> EmailExistsAsync(string email)
+    public async Task<bool> EmailExistsAsync(Email email)
     {
-        return await context.Borrowers.AnyAsync(b => b.Email.Value == email);
+        return await context.Borrowers.AnyAsync(b => b.Email == email);
     }
 
     // Borrower analytics

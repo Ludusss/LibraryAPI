@@ -17,17 +17,17 @@ public class CreateBorrowerCommandHandler(IBorrowerRepository repository, IMappe
     {
         // Check if email already exists
         var emailExists = await repository.EmailExistsAsync(request.Email);
+
         if (emailExists)
             throw new InvalidOperationException(
                 $"A borrower with email {request.Email} already exists"
             );
 
-        var email = Email.Create(request.Email);
 
         var borrower = new Borrower(
             request.FirstName,
             request.LastName,
-            email,
+            request.Email,
             request.PhoneNumber,
             request.MaxBorrowLimit
         );

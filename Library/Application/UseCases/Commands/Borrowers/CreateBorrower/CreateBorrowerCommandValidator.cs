@@ -14,7 +14,7 @@ public class CreateBorrowerCommandValidator : AbstractValidator<CreateBorrowerCo
             .MaximumLength(50)
             .WithMessage("Last name must not exceed 50 characters");
 
-        RuleFor(x => x.Email)
+        RuleFor(x => x.Email.Value)
             .EmailAddress()
             .WithMessage("Email must be a valid email address")
             .MaximumLength(100)

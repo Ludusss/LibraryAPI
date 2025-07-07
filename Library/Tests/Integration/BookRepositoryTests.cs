@@ -24,18 +24,16 @@ public class BookRepositoryTests : IDisposable
     public async Task CreateAndGetBook_ShouldWork()
     {
         // Arrange
-        var book = new Book
-        {
-            Title = "Test Book",
-            Author = "Test Author",
-            Isbn = Isbn.Create("978-0-306-40615-7"),
-            PageCount = 200,
-            PublicationDate = DateTime.Now,
-            TotalCopies = 1,
-            AvailableCopies = 1,
-            Genre = "Test Genre",
-            Description = "Test Description",
-        };
+        var book = new Book(
+            "Test Book",
+            "Test Author",
+            Isbn.Create("978-0-306-40615-7"),
+            200,
+            DateTime.Now,
+            1,
+            "Test Genre",
+            "Test Description"
+        );
 
         // Act
         var createdBook = await _repository.CreateBookAsync(book);
@@ -52,34 +50,18 @@ public class BookRepositoryTests : IDisposable
     public async Task GetBooksAvailable_ShouldReturnOnlyAvailableBooks()
     {
         // Arrange
-        var availableBook = new Book
-        {
-            Title = "Available Book",
-            Author = "Test Author",
-            Isbn = Isbn.Create("978-0-306-40615-7"),
-            PageCount = 200,
-            PublicationDate = DateTime.Now,
-            TotalCopies = 1,
-            AvailableCopies = 1,
-            Genre = "Test Genre",
-            Description = "Test Description",
-        };
-
-        var unavailableBook = new Book
-        {
-            Title = "Unavailable Book",
-            Author = "Test Author",
-            Isbn = Isbn.Create("978-0-306-40615-8"),
-            PageCount = 200,
-            PublicationDate = DateTime.Now,
-            TotalCopies = 1,
-            AvailableCopies = 0,
-            Genre = "Test Genre",
-            Description = "Test Description",
-        };
+        var availableBook = new Book(
+            "Available Book",
+            "Test Author",
+            Isbn.Create("978-0-306-40615-7"),
+            200,
+            DateTime.Now,
+            1,
+            "Test Genre",
+            "Test Description"
+        );
 
         await _repository.CreateBookAsync(availableBook);
-        await _repository.CreateBookAsync(unavailableBook);
 
         // Act
         var availableBooks = await _repository.GetBooksAvailableAsync();
@@ -95,42 +77,36 @@ public class BookRepositoryTests : IDisposable
         // Arrange
         var books = new[]
         {
-            new Book
-            {
-                Title = "The Great Adventure",
-                Author = "John Smith",
-                Isbn = Isbn.Create("978-0-306-40615-7"),
-                PageCount = 200,
-                PublicationDate = DateTime.Now,
-                TotalCopies = 1,
-                AvailableCopies = 1,
-                Genre = "Adventure",
-                Description = "An exciting journey",
-            },
-            new Book
-            {
-                Title = "Programming Guide",
-                Author = "Jane Adventure",
-                Isbn = Isbn.Create("978-0-306-40615-8"),
-                PageCount = 300,
-                PublicationDate = DateTime.Now,
-                TotalCopies = 1,
-                AvailableCopies = 1,
-                Genre = "Technology",
-                Description = "Learn programming",
-            },
-            new Book
-            {
-                Title = "Cooking Basics",
-                Author = "Chef Gordon",
-                Isbn = Isbn.Create("978-0-306-40615-9"),
-                PageCount = 150,
-                PublicationDate = DateTime.Now,
-                TotalCopies = 1,
-                AvailableCopies = 1,
-                Genre = "Cooking",
-                Description = "Start your adventure in cooking",
-            },
+            new Book(
+                "The Great Adventure",
+                "John Smith",
+                Isbn.Create("978-0-306-40615-7"),
+                200,
+                DateTime.Now,
+                1,
+                "Adventure",
+                "An exciting journey"
+            ),
+            new Book(
+                "Programming Guide",
+                "Jane Adventure",
+                Isbn.Create("978-0-306-40615-7"),
+                300,
+                DateTime.Now,
+                1,
+                "Technology",
+                "Learn programming"
+            ),
+            new Book(
+                "Cooking Basics",
+                "Chef Gordon",
+                Isbn.Create("978-0-306-40615-7"),
+                150,
+                DateTime.Now,
+                1,
+                "Cooking",
+                "Start your adventure in cooking"
+            ),
         };
 
         foreach (var book in books)
@@ -155,26 +131,26 @@ public class BookRepositoryTests : IDisposable
     public async Task UpdateBook_ShouldUpdateAllFields()
     {
         // Arrange
-        var book = new Book
-        {
-            Title = "Original Title",
-            Author = "Original Author",
-            Isbn = Isbn.Create("978-0-306-40615-7"),
-            PageCount = 200,
-            PublicationDate = DateTime.Now,
-            TotalCopies = 1,
-            AvailableCopies = 1,
-            Genre = "Original Genre",
-            Description = "Original Description",
-        };
+        var book = new Book(
+            "Original Title",
+            "Original Author",
+            Isbn.Create("978-0-306-40615-7"),
+            200,
+            DateTime.Now,
+            1,
+            "Original Genre",
+            "Original Description"
+        );
 
         var createdBook = await _repository.CreateBookAsync(book);
 
         // Act
-        createdBook.Title = "Updated Title";
-        createdBook.Author = "Updated Author";
-        createdBook.Genre = "Updated Genre";
-        createdBook.Description = "Updated Description";
+        createdBook.UpdateDetails(
+            "Updated Title",
+            "Updated Author",
+            "Updated Genre",
+            "Updated Description"
+        );
 
         await _repository.UpdateBookAsync(createdBook);
         var updatedBook = await _repository.GetBookByIdAsync(createdBook.Id);

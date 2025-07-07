@@ -11,6 +11,7 @@ using Application.UseCases.Queries.Borrowers.GetBorrowerHistory;
 using Application.UseCases.Queries.Borrowers.GetBorrowerReadingRate;
 using Application.UseCases.Queries.Borrowers.GetCurrentlyBorrowedBooks;
 using Application.UseCases.Queries.Borrowers.GetTopBorrowers;
+using Domain.ValueObjects;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -124,7 +125,7 @@ public class BorrowersController(IMediator mediator, ILogger<BorrowersController
         var command = new CreateBorrowerCommand(
             createBorrowerDto.FirstName,
             createBorrowerDto.LastName,
-            createBorrowerDto.Email,
+            Email.Create(createBorrowerDto.Email),
             createBorrowerDto.PhoneNumber,
             createBorrowerDto.MaxBorrowLimit
         );
