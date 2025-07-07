@@ -1,4 +1,4 @@
-# Library API - Senior .NET Developer Assignment
+# Library API - .NET Developer Assignment
 
 A comprehensive Library Management API built with **Domain-Driven Design (DDD)** using .NET 8, Entity Framework Core, and SQL Server.
 
