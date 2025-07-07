@@ -33,36 +33,6 @@ Library/
 - **Borrowing System** - Complete lending workflow with due dates and extensions
 - **Analytics & Reporting** - Most borrowed books, top readers, reading rates
 
-### Key API Endpoints
-
-#### 📚 Books
-- `GET /api/books` - Get all books
-- `GET /api/books/{id}` - Get book by ID
-- `GET /api/books/available` - Get available books
-- `GET /api/books/most-borrowed` - Get most borrowed books
-- `GET /api/books/{id}/availability` - Check book availability and copies
-- `GET /api/books/{id}/reading-rate` - Get average reading rate for book
-
-#### 👥 Borrowers
-- `GET /api/borrowers` - Get all borrowers
-- `GET /api/borrowers/{id}` - Get borrower by ID
-- `GET /api/borrowers/top-borrowers` - Get top borrowers within time frame
-- `GET /api/borrowers/{id}/history` - Get borrower's borrowing history
-- `GET /api/borrowers/{id}/current-books` - Get currently borrowed books
-
-#### 📖 Borrowings
-- `POST /api/borrowings/borrow` - Borrow a book
-- `PUT /api/borrowings/{id}/return` - Return a book
-- `GET /api/borrowings/books-also-borrowed/{bookId}` - Books also borrowed by users who read this book
-- `GET /api/borrowings/reading-rate/book/{bookId}` - Calculate reading rate for book
-
-#### 🔧 Warm-up Tasks
-- `GET /api/warmup/is-power-of-two/{bookId}` - Check if Book ID is power of two
-- `GET /api/warmup/reverse-title?title={title}` - Reverse book title
-- `GET /api/warmup/generate-replicas?title={title}&count={count}` - Generate title replicas
-- `GET /api/warmup/odd-book-ids` - Get odd-numbered book IDs (1-100)
-- `GET /api/warmup/demo` - Demonstrate all warmup tasks
-
 ## 🛠️ Technology Stack
 
 - **.NET 8** - Latest .NET framework
@@ -174,12 +144,8 @@ The application includes pre-seeded sample data:
 - Endpoint: `GET /api/borrowers/{id}/history`
 - Shows what books a user borrowed during specified period
 
-### ✅ Related Books Discovery
-- Endpoint: `GET /api/borrowings/books-also-borrowed/{bookId}`
-- Finds books borrowed by users who also borrowed a specific book
-
 ### ✅ Reading Rate Calculation
-- Endpoint: `GET /api/borrowings/reading-rate/book/{bookId}`
+- Endpoint: `GET /api/books/{bookId}/reading-rate`
 - Estimates pages/day based on borrow/return times
 
 ## 🏛️ Domain-Driven Design Implementation
@@ -187,16 +153,14 @@ The application includes pre-seeded sample data:
 ### Domain Layer
 - **Entities**: Book, Borrower, Borrowing
 - **Value Objects**: ISBN, Email
-- **Domain Events**: BookBorrowedEvent, BookReturnedEvent
 - **Domain Services**: WarmupTasks
 
 ### Application Layer
-- **Services**: BookService, BorrowerService, BorrowingService
+- **CQRS**: Command Query Responsibility segregation
 - **DTOs**: Comprehensive data transfer objects
-- **Interfaces**: Clean abstraction contracts
 
 ### Infrastructure Layer
-- **Repository**: LibraryRepository with EF Core
+- **Repositories**: BookRepository, BorrowerRepository, BorrowingRepository with EF Core
 - **DbContext**: LibraryDbContext with proper configurations
 - **Migrations**: Database schema management
 
@@ -213,53 +177,6 @@ The application includes pre-seeded sample data:
 - **Structured Logging**: Serilog with multiple sinks
 - **Request Logging**: Comprehensive API request tracking
 - **Error Handling**: Global exception handling with proper error responses
-
-## 🚦 API Response Examples
-
-### Get Most Borrowed Books
-```json
-GET /api/books/most-borrowed?count=5
-{
-  "bookId": 1,
-  "title": "The Great Gatsby",
-  "author": "F. Scott Fitzgerald",
-  "isbn": "9780743273565",
-  "borrowCount": 15,
-  "averageReadingRate": 12.5
-}
-```
-
-### Book Availability Check
-```json
-GET /api/books/1/availability
-{
-  "bookId": 1,
-  "isAvailable": true,
-  "availableCopies": 2,
-  "borrowedCopies": 1,
-  "totalCopies": 3
-}
-```
-
-### Warmup Task Demo
-```json
-GET /api/warmup/demo
-{
-  "description": "Demonstration of all warmup tasks",
-  "tasks": {
-    "powerOfTwo": {
-      "task": "Check if Book ID 8 is a power of two",
-      "result": true,
-      "expected": true
-    },
-    "reverseTitle": {
-      "task": "Reverse 'Moby Dick'",
-      "result": "kciD yboM",
-      "expected": "kciD yboM"
-    }
-  }
-}
-```
 
 ## 🎯 Performance Considerations
 
