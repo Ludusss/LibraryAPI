@@ -1,0 +1,400 @@
+2025-07-07 15:39:41.122 +02:00 [INF] Checking if book ID 1 is a power of two
+2025-07-07 15:42:19.767 +02:00 [INF] Checking if book ID 2 is a power of two
+2025-07-07 15:42:24.180 +02:00 [INF] Checking if book ID 3 is a power of two
+2025-07-07 15:42:29.599 +02:00 [INF] Checking if book ID 4 is a power of two
+2025-07-07 15:42:31.024 +02:00 [INF] Checking if book ID 4 is a power of two
+2025-07-07 15:42:37.606 +02:00 [INF] Checking if book ID 5 is a power of two
+2025-07-07 15:42:40.416 +02:00 [INF] Checking if book ID 6 is a power of two
+2025-07-07 15:42:40.467 +02:00 [INF] Checking if book ID 6 is a power of two
+2025-07-07 15:43:58.965 +02:00 [INF] Checking if book ID 1 is a power of two
+2025-07-07 15:44:00.077 +02:00 [INF] Checking if book ID 1 is a power of two
+2025-07-07 15:44:00.414 +02:00 [INF] Checking if book ID 1 is a power of two
+2025-07-07 15:44:00.714 +02:00 [INF] Checking if book ID 1 is a power of two
+2025-07-07 15:44:05.149 +02:00 [INF] Checking if book ID 0 is a power of two
+2025-07-07 15:44:26.824 +02:00 [INF] Reversing book title: test
+2025-07-07 15:45:11.602 +02:00 [INF] Reversing book title: ...
+2025-07-07 15:45:52.170 +02:00 [INF] Generating 1 replicas of book title: xd
+2025-07-07 15:46:02.653 +02:00 [INF] Generating 3 replicas of book title: xd
+2025-07-07 15:46:27.547 +02:00 [INF] Getting odd-numbered book IDs between 1 2025-07-2025-07-07 15:46:59.375 +02:00 [INF] Getting odd-numbered book IDs between 1 2025-07-2025-07-07 15:47:14.536 +02:00 [INF] Getting odd-numbered book IDs between 1 2025-07-2025-07-07 15:47:14.737 +02:00 [INF] Getting odd-numbered book IDs between 1 2025-07-2025-07-07 15:47:15.548 +02:00 [INF] Getting odd-numbered book IDs between 1 2025-07-2025-07-07 15:47:16.079 +02:00 [INF] Getting odd-numbered book IDs between 1 2025-07-2025-07-07 15:47:16.571 +02:00 [INF] Getting odd-numbered book IDs between 1 2025-07-2025-07-07 15:47:17.034 +02:00 [INF] Getting odd-numbered book IDs between 1 2025-07-2025-07-07 15:47:28.126 +02:00 [INF] Demonstrating all warmup tasks
+2025-07-07 15:48:45.921 +02:00 [ERR] An unhandled exception has occurred whil2025-07-07 15:48:45.921 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Application.Interfaces.IBookService' while attempting to activate 'API.Controllers.BooksController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method53(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.2025-07-07 15:49:01.953 +02:00 [ERR] An unhandled exception has occurred whil2025-07-07 15:49:01.953 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Application.Interfaces.IBookService' while attempting to activate 'API.Controllers.BooksController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method53(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.2025-07-07 15:49:17.264 +02:00 [ERR] An unhandled exception has occurred whil2025-07-07 15:49:17.264 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Application.Interfaces.IBookService' while attempting to activate 'API.Controllers.BooksController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method61(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-07 16:12:25.549 +02:00 [INF] Getting all books
+2025-07-07 16:12:25.653 +02:00 [INF] Starting request G2025-07-07 16:122025-07-07 16:12:26.223 +02:00 [INF] Completed request 2025-07-07 16:12:26.223 +02:00 [INF] Completed request GetAllBooksQuery in 569ms
+2025-07-07 16:22:22.455 +02:00 [INF] Getting all books
+2025-07-07 16:22:22.516 +02:00 [INF] Starting request G2025-07-07 16:222025-07-07 16:22:22.919 +02:00 [INF] Completed request 2025-07-07 16:22:22.919 +02025-07-07 16:22:42.244 +02:00 [INF] Getting book with 2025-02025-07-07 16:22:42.245 +02:00 [INF] Starting request G2025-07-07 16:222025-07-07 16:22:42.310 +02:00 [INF] Completed request 2025-07-07 16:22:42.310 +2025-07-07 16:22:53.121 +02:00 [INF] Getting most borro2025-07-07 16:22:53.121 +2025-07-07 16:22:53.131 +02:00 [INF] Starting request G2025-07-07 16:22:53.131 +2025-07-07 16:22:53.258 +02:00 [INF] Completed request 2025-07-07 16:22:53.258 +02:00 [INF2025-07-07 16:23:47.266 +02:00 [INF] Getting availabili2025-07-07 16:23:42025-07-07 16:23:47.266 +02:00 [INF] Starting request G2025-07-07 16:232025-07-07 16:23:47.274 +02:00 [INF] Completed request 2025-07-07 16:23:47.274 2025-07-07 16:24:07.645 +02:00 [INF] Borrowing book ID 2025-07-07 16:24:07.2025-07-07 16:24:07.646 +02:00 [INF] Starting request B2025-07-07 16:24:2025-07-07 16:24:07.860 +02:00 [ERR] Request BorrowBook2025-07-07 16:24:07.860 +02:00 [ERR] Request BorrowBookCommand failed after 213ms
+System.Collections.Generic.KeyNotFoundException: Borrower with ID 0 not found
+   at Application.Commands.Borrowings.BorrowBook.BorrowBookCommandHandler.Handle(BorrowBookCommand request, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/UseCases/Commands/Borrowings/BorrowBook/BorrowBookCommandHandler.cs:line 29
+   at Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Common/Behaviors/ValidationBehavior.cs:line 41
+   at Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/A2025-07-07 16:24:07.907 +02:00 [ERR] An unhandled excep2025-07-07 16:24:07.907 +02:00 [ERR] An unhandled exception occurred: Borrower with ID 0 not found
+System.Collections.Generic.KeyNotFoundException: Borrower with ID 0 not found
+   at Application.Commands.Borrowings.BorrowBook.BorrowBookCommandHandler.Handle(BorrowBookCommand request, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/UseCases/Commands/Borrowings/BorrowBook/BorrowBookCommandHandler.cs:line 29
+   at Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Common/Behaviors/ValidationBehavior.cs:line 41
+   at Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Common/Behaviors/LoggingBehavior.cs:line 30
+   at API.Controllers.BorrowingsController.BorrowBook(BorrowBookCommand command) in /Users/stefan.c/Projects/LibraryAPI/Library/API/Controllers/BorrowingsController.cs:line 35
+   at lambda_method153(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State2025-07-07 16:24:14.960 +02:00 [INF] Borrowing book ID 2025-07-07 16:24:14.2025-07-07 16:24:14.962 +02:00 [INF] Starting request B2025-07-07 16:24:2025-07-07 16:24:15.142 +02:00 [INF] Completed request 2025-07-07 16:24:15.142 +022025-07-07 16:24:48.675 +02:00 [INF] Getting reading ra2025-07-07 16:24:42025-07-07 16:24:48.676 +02:00 [INF] Starting request G2025-07-07 16:242025-07-07 16:24:48.693 +02:00 [INF] Completed request 2025-07-07 16:24:48.693 +2025-07-07 16:24:54.890 +02:00 [INF] Getting reading ra2025-07-07 16:24:52025-07-07 16:24:54.890 +02:00 [INF] Starting request G2025-07-07 16:242025-07-07 16:24:54.892 +02:00 [INF] Completed request 2025-07-07 16:24:54.892 2025-07-07 16:24:59.175 +02:00 [INF] Getting reading ra2025-07-07 16:24:52025-07-07 16:24:59.175 +02:00 [INF] Starting request G2025-07-07 16:242025-07-07 16:24:59.179 +02:00 [INF] Completed request 2025-07-07 16:24:59.179 2025-07-07 16:25:00.959 +02:00 [INF] Getting reading ra2025-07-07 16:25:02025-07-07 16:25:01.007 +02:00 [INF] Starting request G2025-07-07 16:252025-07-07 16:25:01.012 +02:00 [INF] Completed request 2025-07-07 16:25:01.012 2025-07-07 16:25:05.354 +02:00 [INF] Getting reading ra2025-07-07 16:25:02025-07-07 16:25:05.355 +02:00 [INF] Starting request G2025-07-07 16:252025-07-07 16:25:05.358 +02:00 [INF] Completed request 2025-07-07 16:25:05.358 2025-07-07 16:25:08.740 +02:00 [INF] Getting reading ra2025-07-07 16:25:02025-07-07 16:25:08.740 +02:00 [INF] Starting request G2025-07-07 16:252025-07-07 16:25:08.742 +02:00 [INF] Completed request 2025-07-07 16:25:08.742 2025-07-07 16:25:11.305 +02:00 [INF] Getting reading ra2025-07-07 16:25:12025-07-07 16:25:11.306 +02:00 [INF] Starting request G2025-07-07 16:252025-07-07 16:25:11.413 +02:00 [ERR] Request GetBookByI2025-07-07 16:25:11.413 +02:00 [ERR] Request GetBookByIdQuery failed after 107ms
+System.Collections.Generic.KeyNotFoundException: Book with ID 6 not found
+   at Application.Queries.Books.GetBookById.GetBookByIdQueryHandler.Handle(GetBookByIdQuery request, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/UseCases/Queries/Books/GetBookById/GetBookByIdQueryHandler.cs:line 25
+   at Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Common/Behaviors/ValidationBehavior.cs:line 41
+   at Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/A2025-07-07 16:25:11.447 +02:00 [ERR] An unhandled excep2025-07-07 16:25:11.447 +02:00 [ERR] An unhandled exception occurred: Book with ID 6 not found
+System.Collections.Generic.KeyNotFoundException: Book with ID 6 not found
+   at Application.Queries.Books.GetBookById.GetBookByIdQueryHandler.Handle(GetBookByIdQuery request, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/UseCases/Queries/Books/GetBookById/GetBookByIdQueryHandler.cs:line 25
+   at Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Common/Behaviors/ValidationBehavior.cs:line 41
+   at Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Common/Behaviors/LoggingBehavior.cs:line 30
+   at API.Controllers.BooksController.GetBookReadingRate(Int32 id) in /Users/stefan.c/Projects/LibraryAPI/Library/API/Controllers/BooksController.cs:line 106
+   at lambda_method394(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State2025-07-07 16:36:27.105 +02:00 [INF] Getting most borro2025-07-07 16:36:27.105 +2025-07-07 16:36:27.108 +02:00 [INF] Starting request G2025-07-07 16:36:27.108 +2025-07-07 16:36:27.129 +02:00 [INF] Completed request 2025-07-07 16:36:27.129 +02:00 [IN2025-07-07 16:36:31.711 +02:00 [INF] Getting most borro2025-07-07 16:36:31.711 +2025-07-07 16:36:31.713 +02:00 [INF] Starting request G2025-07-07 16:36:31.713 +2025-07-07 16:36:31.719 +02:00 [INF] Completed request 2025-07-07 16:36:31.719 +02:00 [I2025-07-07 16:36:37.092 +02:00 [INF] Getting most borro2025-07-07 16:36:37.092 +2025-07-07 16:36:37.093 +02:00 [INF] Starting request G2025-07-07 16:36:37.093 +2025-07-07 16:36:37.099 +02:00 [INF] Completed request 2025-07-07 16:36:37.099 +02:00 [I2025-07-07 16:37:05.139 +02:00 [INF] Getting book with 2025-02025-07-07 16:37:05.141 +02:00 [INF] Starting request G2025-07-07 16:372025-07-07 16:37:05.230 +02:00 [ERR] Request GetBookByI2025-07-07 16:37:05.230 +02:00 [ERR] Request GetBookByIdQuery failed after 89ms
+System.Collections.Generic.KeyNotFoundException: Book with ID 0 not found
+   at Application.Queries.Books.GetBookById.GetBookByIdQueryHandler.Handle(GetBookByIdQuery request, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/UseCases/Queries/Books/GetBookById/GetBookByIdQueryHandler.cs:line 25
+   at Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Common/Behaviors/ValidationBehavior.cs:line 41
+   at Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/A2025-07-07 16:37:05.268 +02:00 [ERR] An unhandled excep2025-07-07 16:37:05.268 +02:00 [ERR] An unhandled exception occurred: Book with ID 0 not found
+System.Collections.Generic.KeyNotFoundException: Book with ID 0 not found
+   at Application.Queries.Books.GetBookById.GetBookByIdQueryHandler.Handle(GetBookByIdQuery request, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/UseCases/Queries/Books/GetBookById/GetBookByIdQueryHandler.cs:line 25
+   at Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Common/Behaviors/ValidationBehavior.cs:line 41
+   at Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Common/Behaviors/LoggingBehavior.cs:line 30
+   at API.Controllers.BooksController.GetBook(Int32 id)
+   at lambda_method117(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State2025-07-07 16:37:52.476 +02:00 [INF] Getting availabili2025-07-07 16:37:52025-07-07 16:37:52.480 +02:00 [INF] Starting request G2025-07-07 16:372025-07-07 16:37:52.487 +02:00 [INF] Completed request 2025-07-07 16:37:52.487 +02:00 [INF] Completed request GetBookByIdQuery in 7ms
+2025-07-07 17:20:42.514 +02:00 [INF] Getting most borrowed books with count: 10
+2025-07-07 17:20:42.562 +02:00 [INF] Starting request GetMostBorrowedBooksQuery
+2025-07-07 17:20:42.833 +02:00 [INF] Completed request GetMostBorrowedBooksQuery2025-07-072025-07-07 17:21:16.050 +02:00 [INF] Getting book with ID: 1
+2025-07-07 17:21:16.051 +02:00 [INF] Starting request GetBookByIdQuery
+2025-07-07 17:21:16.269 +02:00 [INF] Completed request GetBookByIdQuery in 218ms22025-07-07 17:21:46.992 +02:00 [INF] Getting top 10 borrowers
+2025-07-07 17:21:46.995 +02:00 [INF] Starting request GetTopBorrowersQuery
+2025-07-07 17:21:47.035 +02:00 [INF] Completed request GetTopBorrowersQuery in 320252025-07-07 17:22:03.456 +02:00 [INF] Getting all borrowers
+2025-07-07 17:22:03.459 +02:00 [INF] Starting request GetAllBorrowersQuery
+2025-07-07 17:22:03.498 +02:00 [INF] Completed request GetAllBorrowersQuery in 32025-07-07 17:22:03.498 +02:00 [INF] Completed request GetAllBorrowersQuery in 39ms
+2025-07-07 17:24:15.378 +02:00 [INF] Borrowing book ID 1 for borrower ID 1
+2025-07-07 17:24:15.425 +02:00 [INF] Starting request BorrowBookCommand
+2025-07-07 17:24:16.052 +02:00 [INF] Completed request BorrowBookCommand in2025-072025-07-07 17:24:26.594 +02:00 [INF] Getting top 10 borrowers
+2025-07-07 17:24:26.595 +02:00 [INF] Starting request GetTopBorrowersQuery
+2025-07-07 17:24:26.687 +02:00 [INF] Completed request GetTopBorrowersQuery2025-07-02025-07-07 17:24:42.157 +02:00 [INF] Borrowing book ID 1 for borrower ID 2
+2025-07-07 17:24:42.158 +02:00 [INF] Starting request BorrowBookCommand
+2025-07-07 17:24:42.178 +02:00 [INF] Completed request BorrowBookCommand in2025-02025-07-07 17:24:46.199 +02:00 [INF] Borrowing book ID 1 for borrower ID 2
+2025-07-07 17:24:46.200 +02:00 [INF] Starting request BorrowBookCommand
+2025-07-07 17:24:46.205 +02:00 [ERR] Request BorrowBookCommand failed after2025-07-07 17:24:46.205 +02:00 [ERR] Request BorrowBookCommand failed after 4ms
+System.InvalidOperationException: Book is not available for borrowing.
+   at Application.Commands.Borrowings.BorrowBook.BorrowBookCommandHandler.Handle(BorrowBookCommand request, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/UseCases/Commands/Borrowings/BorrowBook/BorrowBookCommandHandler.cs:line 36
+   at Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/ValidationBehavior.cs:line 35
+   at Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Pr2025-07-07 17:24:46.218 +02:00 [ERR] An unhandled exception occurred: Book 2025-07-07 17:24:46.218 +02:00 [ERR] An unhandled exception occurred: Book is not available for borrowing.
+System.InvalidOperationException: Book is not available for borrowing.
+   at Application.Commands.Borrowings.BorrowBook.BorrowBookCommandHandler.Handle(BorrowBookCommand request, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/UseCases/Commands/Borrowings/BorrowBook/BorrowBookCommandHandler.cs:line 36
+   at Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/ValidationBehavior.cs:line 35
+   at Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/LoggingBehavior.cs:line 25
+   at API.Controllers.BorrowingsController.BorrowBook(BorrowBookCommand command) in /Users/stefan.c/Projects/LibraryAPI/Library/API/Controllers/BorrowingsController.cs:line 21
+   at lambda_method36(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, 2025-07-07 17:24:53.080 +02:00 [INF] Getting top 10 borrowers
+2025-07-07 17:24:53.080 +02:00 [INF] Starting request GetTopBorrowersQuery
+2025-07-07 17:24:53.082 +02:00 [INF] Completed request GetTopBorrowersQuery2025-07-2025-07-07 17:25:24.228 +02:00 [INF] Getting all borrowers
+2025-07-07 17:25:24.231 +02:00 [INF] Starting request GetAllBorrowersQuery
+2025-07-07 17:25:24.268 +02:00 [INF] Completed request GetAllBorrowersQuery2025-07-02025-07-07 17:25:43.734 +02:00 [INF] Updating borrower with ID: 1
+2025-07-07 17:25:43.735 +02:00 [INF] Starting request UpdateBorrowerCommand22025-07-07 17:25:43.735 +02:00 [ERR] Request UpdateBorrowerCommand failed a2025-07-07 17:25:43.735 +02:00 [ERR] Request UpdateBorrowerCommand failed after 0ms
+System.InvalidOperationException: No service for type 'MediatR.IRequestHandler`2[Application.UseCases.Commands.Borrowers.UpdateBorrower.UpdateBorrowerCommand,Application.DTOs.BorrowerDto]' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/ValidationBehavior.cs:line 35
+   at Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Pr2025-07-07 17:25:43.741 +02:00 [ERR] An unhandled exception occurred: No se2025-07-07 17:25:43.741 +02:00 [ERR] An unhandled exception occurred: No service for type 'MediatR.IRequestHandler`2[Application.UseCases.Commands.Borrowers.UpdateBorrower.UpdateBorrowerCommand,Application.DTOs.BorrowerDto]' has been registered.
+System.InvalidOperationException: No service for type 'MediatR.IRequestHandler`2[Application.UseCases.Commands.Borrowers.UpdateBorrower.UpdateBorrowerCommand,Application.DTOs.BorrowerDto]' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/ValidationBehavior.cs:line 35
+   at Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/LoggingBehavior.cs:line 25
+   at API.Controllers.BorrowersController.UpdateBorrower(Int32 id, UpdateBorrowerDto updateBorrowerDto) in /Users/stefan.c/Projects/LibraryAPI/Library/API/Controllers/BorrowersController.cs:line 153
+   at lambda_method379(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, 2025-07-07 17:26:14.143 +02:00 [INF] Getting top 10 borrowers
+2025-07-07 17:26:14.144 +02:00 [INF] Starting request GetTopBorrowersQuery
+2025-07-07 17:26:14.146 +02:00 [INF] Completed request GetTopBorrowersQuery2025-07-2025-07-07 17:26:20.757 +02:00 [INF] Getting active borrowers
+2025-07-07 17:26:20.759 +02:00 [INF] Starting request GetActiveBorrowersQue2022025-07-07 17:26:20.768 +02:00 [INF] Completed request GetActiveBorrowersQu2025-07-07 2025-07-07 17:27:14.701 +02:00 [INF] Checking if borrower ID 1 can borrow
+2025-07-07 17:27:14.706 +02:00 [INF] Starting request CanBorrowerBorrowQuer202025-07-07 17:27:14.714 +02:00 [INF] Completed request CanBorrowerBorrowQue2025-07-072025-07-07 17:27:26.654 +02:00 [INF] Checking if borrower ID 2 can borrow
+2025-07-07 17:27:26.655 +02:00 [INF] Starting request CanBorrowerBorrowQuer202025-07-07 17:27:26.656 +02:00 [INF] Completed request CanBorrowerBorrowQue2025-07-072025-07-07 17:27:36.952 +02:00 [INF] Getting borrowing history for borrower2025-072025-07-07 17:27:36.955 +02:00 [INF] Starting request GetBorrowerHistoryQue2022025-07-07 17:27:36.978 +02:00 [INF] Completed request GetBorrowerHistoryQu2025-07-07 12025-07-07 17:28:06.876 +02:00 [INF] Getting currently borrowed books for b2025-07-07 17:2025-07-07 17:28:06.877 +02:00 [INF] Starting request GetCurrentlyBorrowedB2025-07-072025-07-07 17:28:06.888 +02:00 [INF] Completed request GetCurrentlyBorrowed2025-07-07 17:28:062025-07-07 17:28:20.859 +02:00 [INF] Getting reading rate for borrower ID: 202025-07-07 17:28:20.863 +02:00 [INF] Starting request GetBorrowerReadingRat2025-072025-07-07 17:28:20.868 +02:00 [INF] Completed request GetBorrowerReadingRa2025-07-07 17:28:20.868 +02:00 [INF] Completed request GetBorrowerReadingRateQuery in 5ms
+2025-07-07 17:30:34.245 +02:00 [INF] Getting all borrowers
+2025-07-07 17:30:34.305 +02:00 [INF] Starting request GetAl2025-07-07 17:302025-07-07 17:30:34.677 +02:00 [INF] Completed request GetA2025-07-07 17:30:34.677 +02025-07-07 17:30:55.823 +02:00 [INF] Getting borrower with 2025-02025-07-07 17:30:55.824 +02:00 [INF] Starting request GetBo2025-07-07 17:302025-07-07 17:30:55.878 +02:00 [INF] Completed request GetB2025-07-07 17:30:55.878 +2025-07-07 17:31:06.433 +02:00 [INF] Getting currently borr2025-07-07 17:31:06.433 +02:002025-07-07 17:31:06.435 +02:00 [INF] Starting request GetCu2025-07-07 17:31:06.435 +02025-07-07 17:31:06.478 +02:00 [INF] Completed request GetC2025-07-07 17:31:06.478 +02:00 [INF2025-07-07 17:32:08.296 +02:00 [INF] Getting currently borr2025-07-07 17:32:08.296 +02:002025-07-07 17:32:08.299 +02:00 [INF] Starting request GetCu2025-07-07 17:32:08.299 +02025-07-07 17:32:08.306 +02:00 [INF] Completed request GetC2025-07-07 17:32:08.306 +02:00 [IN2025-07-07 17:32:23.537 +02:00 [INF] Getting borrowing hist2025-07-07 17:32:23.5372025-07-07 17:32:23.539 +02:00 [INF] Starting request GetBo2025-07-07 17:32:232025-07-07 17:32:23.551 +02:00 [INF] Completed request GetB2025-07-07 17:32:23.551 +02:2025-07-07 17:32:41.302 +02:00 [INF] Returning borrowing ID2022025-07-07 17:32:41.314 +02:00 [INF] Starting request Retur2025-07-07 172025-07-07 17:32:41.333 +02:00 [ERR] Request ReturnBookComm2025-07-07 17:32:41.333 +02:00 [ERR] Request ReturnBookCommand failed after 19ms
+FluentValidation.ValidationException: Validation failed: 
+ -- BorrowingId: Borrowing ID must be greater than 0 Severity: Error
+   at Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/ValidationBehavior.cs:line 31
+   at Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAP2025-07-07 17:32:41.347 +02:00 [ERR] An unhandled exception2025-07-07 17:32:41.347 +02:00 [ERR] An unhandled exception occurred: Validation failed: 
+ -- BorrowingId: Borrowing ID must be greater than 0 Severity: Error
+FluentValidation.ValidationException: Validation failed: 
+ -- BorrowingId: Borrowing ID must be greater than 0 Severity: Error
+   at Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/ValidationBehavior.cs:line 31
+   at Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/LoggingBehavior.cs:line 25
+   at API.Controllers.BorrowingsController.ReturnBook(ReturnBookCommand command) in /Users/stefan.c/Projects/LibraryAPI/Library/API/Controllers/BorrowingsController.cs:line 32
+   at lambda_method248(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, S2025-07-07 17:32:48.650 +02:00 [INF] Returning borrowing ID2022025-07-07 17:32:48.652 +02:00 [INF] Starting request Retur2025-07-07 172025-07-07 17:32:48.784 +02:00 [INF] Completed request Retu2025-07-07 17:32:48.7842025-07-07 17:33:16.007 +02:00 [INF] Getting borrowing hist2025-07-07 17:33:16.0072025-07-07 17:33:16.007 +02:00 [INF] Starting request GetBo2025-07-07 17:33:162025-07-07 17:33:16.012 +02:00 [INF] Completed request GetB2025-07-07 17:33:16.012 +022025-07-07 17:33:59.596 +02:00 [INF] Updating borrower with2025-072025-07-07 17:33:59.597 +02:00 [INF] Starting request Updat2025-07-07 17:33:2025-07-07 17:33:59.598 +02:00 [ERR] Request UpdateBorrower2025-07-07 17:33:59.598 +02:00 [ERR] Request UpdateBorrowerCommand failed after 0ms
+System.InvalidOperationException: No service for type 'MediatR.IRequestHandler`2[Application.UseCases.Commands.Borrowers.UpdateBorrower.UpdateBorrowerCommand,Application.DTOs.BorrowerDto]' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/ValidationBehavior.cs:line 35
+   at Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAP2025-07-07 17:33:59.601 +02:00 [ERR] An unhandled exception2025-07-07 17:33:59.601 +02:00 [ERR] An unhandled exception occurred: No service for type 'MediatR.IRequestHandler`2[Application.UseCases.Commands.Borrowers.UpdateBorrower.UpdateBorrowerCommand,Application.DTOs.BorrowerDto]' has been registered.
+System.InvalidOperationException: No service for type 'MediatR.IRequestHandler`2[Application.UseCases.Commands.Borrowers.UpdateBorrower.UpdateBorrowerCommand,Application.DTOs.BorrowerDto]' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/ValidationBehavior.cs:line 35
+   at Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/LoggingBehavior.cs:line 25
+   at API.Controllers.BorrowersController.UpdateBorrower(Int32 id, UpdateBorrowerDto updateBorrowerDto) in /Users/stefan.c/Projects/LibraryAPI/Library/API/Controllers/BorrowersController.cs:line 152
+   at lambda_method388(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2025-07-07 17:38:51.218 +02:00 [INF] Updating borrower with ID: 1
+2025-07-07 17:38:51.289 +02:00 [INF] Starting request UpdateBorrow2025-07-072025-07-07 17:38:51.310 +02:00 [ERR] Request UpdateBorrowerCommand2025-07-07 17:38:51.310 +02:00 [ERR] Request UpdateBorrowerCommand failed after 21ms
+FluentValidation.ValidationException: Validation failed: 
+ -- FirstName: First name is required Severity: Error
+ -- LastName: Last name is required Severity: Error
+ -- PhoneNumber: Phone number is required Severity: Error
+ -- MaxBorrowLimit: Max borrow limit must be greater than 0 Severity: Error
+   at Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/ValidationBehavior.cs:line 31
+   at Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/Li2025-07-07 17:38:51.319 +02:00 [ERR] An unhandled exception occurr2025-07-07 17:38:51.319 +02:00 [ERR] An unhandled exception occurred: Validation failed: 
+ -- FirstName: First name is required Severity: Error
+ -- LastName: Last name is required Severity: Error
+ -- PhoneNumber: Phone number is required Severity: Error
+ -- MaxBorrowLimit: Max borrow limit must be greater than 0 Severity: Error
+FluentValidation.ValidationException: Validation failed: 
+ -- FirstName: First name is required Severity: Error
+ -- LastName: Last name is required Severity: Error
+ -- PhoneNumber: Phone number is required Severity: Error
+ -- MaxBorrowLimit: Max borrow limit must be greater than 0 Severity: Error
+   at Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/ValidationBehavior.cs:line 31
+   at Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/LoggingBehavior.cs:line 25
+   at API.Controllers.BorrowersController.UpdateBorrower(Int32 id, UpdateBorrowerDto updateBorrowerDto) in /Users/stefan.c/Projects/LibraryAPI/Library/API/Controllers/BorrowersController.cs:line 152
+   at lambda_method36(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task last2025-07-07 17:39:42.501 +02:00 [INF] Updating borrower with ID: 1
+2025-07-07 17:39:42.504 +02:00 [INF] Starting request UpdateBorrow2025-07-072025-07-07 17:39:42.505 +02:00 [ERR] Request UpdateBorrowerCommand2025-07-07 17:39:42.505 +02:00 [ERR] Request UpdateBorrowerCommand failed after 0ms
+FluentValidation.ValidationException: Validation failed: 
+ -- FirstName: First name is required Severity: Error
+ -- LastName: Last name is required Severity: Error
+ -- PhoneNumber: Phone number is required Severity: Error
+ -- MaxBorrowLimit: Max borrow limit must be greater than 0 Severity: Error
+   at Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, Re2025-07-07 17:39:42.506 +02:00 [ERR] An unhandled exception occurr2025-07-07 17:39:42.506 +02:00 [ERR] An unhandled exception occurred: Validation failed: 
+ -- FirstName: First name is required Severity: Error
+ -- LastName: Last name is required Severity: Error
+ -- PhoneNumber: Phone number is required Severity: Error
+ -- MaxBorrowLimit: Max borrow limit must be greater than 0 Severity: Error
+FluentValidation.ValidationException: Validation failed: 
+ -- FirstName: First name is required Severity: Error
+ -- LastName: Last name is required Severity: Error
+ -- PhoneNumber: Phone number is required Severity: Error
+ -- MaxBorrowLimit: Max borrow limit must be greater than 0 Severity: Error
+   at Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at API.Controllers.BorrowersController.UpdateBorrower(Int32 id, UpdateBorrowerDto updateBorrowerDto) in /Users/stefan.c/Projects/LibraryAPI/Library/API/Controllers/BorrowersController.cs:line 152
+   at lambda_method49(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2025-07-07 17:40:26.776 +02:00 [INF] Updating borrower with ID: 1
+2025-07-07 17:40:26.834 +02:00 [INF] Starting request UpdateBorrow2025-07-072025-07-07 17:40:26.855 +02:00 [ERR] Request UpdateBorrowerCommand2025-07-07 17:40:26.855 +02:00 [ERR] Request UpdateBorrowerCommand failed after 20ms
+FluentValidation.ValidationException: Validation failed: 
+ -- FirstName: First name is required Severity: Error
+ -- LastName: Last name is required Severity: Error
+ -- PhoneNumber: Phone number is required Severity: Error
+ -- MaxBorrowLimit: Max borrow limit must be greater than 0 Severity: Error
+   at Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/ValidationBehavior.cs:line 31
+   at Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/Li2025-07-07 17:40:26.863 +02:00 [ERR] An unhandled exception occurr2025-07-07 17:40:26.863 +02:00 [ERR] An unhandled exception occurred: Validation failed: 
+ -- FirstName: First name is required Severity: Error
+ -- LastName: Last name is required Severity: Error
+ -- PhoneNumber: Phone number is required Severity: Error
+ -- MaxBorrowLimit: Max borrow limit must be greater than 0 Severity: Error
+FluentValidation.ValidationException: Validation failed: 
+ -- FirstName: First name is required Severity: Error
+ -- LastName: Last name is required Severity: Error
+ -- PhoneNumber: Phone number is required Severity: Error
+ -- MaxBorrowLimit: Max borrow limit must be greater than 0 Severity: Error
+   at Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/ValidationBehavior.cs:line 31
+   at Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/LoggingBehavior.cs:line 25
+   at API.Controllers.BorrowersController.UpdateBorrower(Int32 id, UpdateBorrowerDto updateBorrowerDto) in /Users/stefan.c/Projects/LibraryAPI/Library/API/Controllers/BorrowersController.cs:line 152
+   at lambda_method36(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2025-07-07 17:40:46.802 +02:00 [INF] Updating borrower with ID: 1
+2025-07-07 17:40:46.861 +02:00 [INF] Starting request UpdateBorrow2025-07-072025-07-07 17:40:46.881 +02:00 [ERR] Request UpdateBorrowerCommand2025-07-07 17:40:46.881 +02:00 [ERR] Request UpdateBorrowerCommand failed after 20ms
+FluentValidation.ValidationException: Validation failed: 
+ -- MaxBorrowLimit: Max borrow limit must be greater than 0 Severity: Error
+   at Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/ValidationBehavior.cs:line 31
+   at Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/Li2025-07-07 17:40:46.888 +02:00 [ERR] An unhandled exception occurr2025-07-07 17:40:46.888 +02:00 [ERR] An unhandled exception occurred: Validation failed: 
+ -- MaxBorrowLimit: Max borrow limit must be greater than 0 Severity: Error
+FluentValidation.ValidationException: Validation failed: 
+ -- MaxBorrowLimit: Max borrow limit must be greater than 0 Severity: Error
+   at Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/ValidationBehavior.cs:line 31
+   at Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/LoggingBehavior.cs:line 25
+   at API.Controllers.BorrowersController.UpdateBorrower(Int32 id, UpdateBorrowerDto updateBorrowerDto) in /Users/stefan.c/Projects/LibraryAPI/Library/API/Controllers/BorrowersController.cs:line 152
+   at lambda_method36(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task last2025-07-07 17:40:59.242 +02:00 [INF] Getting borrower with ID: 1
+2025-07-07 17:40:59.244 +02:00 [INF] Starting request GetBorrowerB2025-07-02025-07-07 17:40:59.629 +02:00 [INF] Completed request GetBorrower2025-07-07 17:40:592025-07-07 17:41:07.469 +02:00 [INF] Updating borrower with ID: 1
+2025-07-07 17:41:07.471 +02:00 [INF] Starting request UpdateBorrow2025-07-072025-07-07 17:41:07.595 +02:00 [INF] Completed request UpdateBorro2025-07-07 17:41:07.2025-07-07 17:41:31.594 +02:00 [INF] Borrowing book ID 1 for borro2025-07-02025-07-07 17:41:31.596 +02:00 [INF] Starting request BorrowBookCo2025-02025-07-07 17:41:31.597 +02:00 [ERR] Request BorrowBookCommand fai2025-07-07 17:41:31.597 +02:00 [ERR] Request BorrowBookCommand failed after 0ms
+FluentValidation.ValidationException: Validation failed: 
+ -- BorrowDurationDays: Borrow duration cannot exceed 90 days Severity: Error
+   at Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/ValidationBehavior.cs:line 31
+   at Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/Li2025-07-07 17:41:31.598 +02:00 [ERR] An unhandled exception occurr2025-07-07 17:41:31.598 +02:00 [ERR] An unhandled exception occurred: Validation failed: 
+ -- BorrowDurationDays: Borrow duration cannot exceed 90 days Severity: Error
+FluentValidation.ValidationException: Validation failed: 
+ -- BorrowDurationDays: Borrow duration cannot exceed 90 days Severity: Error
+   at Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/ValidationBehavior.cs:line 31
+   at Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/LoggingBehavior.cs:line 25
+   at API.Controllers.BorrowingsController.BorrowBook(BorrowBookCommand command) in /Users/stefan.c/Projects/LibraryAPI/Library/API/Controllers/BorrowingsController.cs:line 23
+   at lambda_method235(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task last2025-07-07 17:41:38.081 +02:00 [INF] Borrowing book ID 1 for borro2025-07-02025-07-07 17:41:38.082 +02:00 [INF] Starting request BorrowBookCo2025-02025-07-07 17:41:38.114 +02:00 [ERR] Request BorrowBookCommand fai2025-07-07 17:41:38.114 +02:00 [ERR] Request BorrowBookCommand failed after 32ms
+System.InvalidOperationException: Borrower cannot borrow books. Either inactive or at borrow limit.
+   at Application.Commands.Borrowings.BorrowBook.BorrowBookCommandHandler.Handle(BorrowBookCommand request, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/UseCases/Commands/Borrowings/BorrowBook/BorrowBookCommandHandler.cs:line 31
+   at Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/ValidationBehavior.cs:line 35
+   at Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/Li2025-07-07 17:41:38.115 +02:00 [ERR] An unhandled exception occurr2025-07-07 17:41:38.115 +02:00 [ERR] An unhandled exception occurred: Borrower cannot borrow books. Either inactive or at borrow limit.
+System.InvalidOperationException: Borrower cannot borrow books. Either inactive or at borrow limit.
+   at Application.Commands.Borrowings.BorrowBook.BorrowBookCommandHandler.Handle(BorrowBookCommand request, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/UseCases/Commands/Borrowings/BorrowBook/BorrowBookCommandHandler.cs:line 31
+   at Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/ValidationBehavior.cs:line 35
+   at Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/LoggingBehavior.cs:line 25
+   at API.Controllers.BorrowingsController.BorrowBook(BorrowBookCommand command) in /Users/stefan.c/Projects/LibraryAPI/Library/API/Controllers/BorrowingsController.cs:line 23
+   at lambda_method235(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task last2025-07-07 17:41:57.369 +02:00 [INF] Returning borrowing ID 2
+2025-07-07 17:41:57.371 +02:00 [INF] Starting request ReturnBookCo2025-02025-07-07 17:41:57.429 +02:00 [INF] Completed request ReturnBookC2025-07-07 17:42025-07-07 17:42:03.348 +02:00 [INF] Borrowing book ID 1 for borro2025-07-02025-07-07 17:42:03.352 +02:00 [INF] Starting request BorrowBookCo2025-02025-07-07 17:42:03.402 +02:00 [INF] Completed request BorrowBookC2025-07-07 17:42025-07-07 17:42:07.981 +02:00 [INF] Returning borrowing ID 2
+2025-07-07 17:42:07.982 +02:00 [INF] Starting request ReturnBookCo2025-02025-07-07 17:42:07.986 +02:00 [ERR] Request ReturnBookCommand fai2025-07-07 17:42:07.986 +02:00 [ERR] Request ReturnBookCommand failed after 3ms
+System.InvalidOperationException: Book has already been returned
+   at Application.UseCases.Commands.Borrowings.ReturnBook.ReturnBookCommandHandler.Handle(ReturnBookCommand request, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/UseCases/Commands/Borrowings/ReturnBook/ReturnBookCommandHandler.cs:line 25
+   at Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/ValidationBehavior.cs:line 35
+   at Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/Li2025-07-07 17:42:07.989 +02:00 [ERR] An unhandled exception occurr2025-07-07 17:42:07.989 +02:00 [ERR] An unhandled exception occurred: Book has already been returned
+System.InvalidOperationException: Book has already been returned
+   at Application.UseCases.Commands.Borrowings.ReturnBook.ReturnBookCommandHandler.Handle(ReturnBookCommand request, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/UseCases/Commands/Borrowings/ReturnBook/ReturnBookCommandHandler.cs:line 25
+   at Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/ValidationBehavior.cs:line 35
+   at Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/stefan.c/Projects/LibraryAPI/Library/Application/Behaviors/LoggingBehavior.cs:line 25
+   at API.Controllers.BorrowingsController.ReturnBook(ReturnBookCommand command) in /Users/stefan.c/Projects/LibraryAPI/Library/API/Controllers/BorrowingsController.cs:line 32
+   at lambda_method313(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task last2025-07-07 17:42:13.674 +02:00 [INF] Returning borrowing ID 3
+2025-07-07 17:42:13.675 +02:00 [INF] Starting request ReturnBookCo2025-02025-07-07 17:42:13.682 +02:00 [INF] Completed request ReturnBookC2025-07-07 17:42:13.682 +02:00 [INF] Completed request ReturnBookCommand in 6ms

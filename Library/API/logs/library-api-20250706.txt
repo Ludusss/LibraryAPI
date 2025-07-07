@@ -1,0 +1,4 @@
+2025-07-06 14:10:21.338 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-07-06 14:10:21.338 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-07-06 14:11:34.822 +02:00 [INF] Demonstrating all warmup tasks
+2025-07-06 14:11:34.822 +02:00 [INF] Demonstrating all warmup tasks
