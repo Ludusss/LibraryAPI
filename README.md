@@ -1,12 +1,11 @@
 # Library API - Senior .NET Developer Assignment
 
-A comprehensive Library Management API built with **Domain-Driven Design (DDD)** and **Modular Monolith** architecture using .NET 8, Entity Framework Core, and SQL Server.
+A comprehensive Library Management API built with **Domain-Driven Design (DDD)** using .NET 8, Entity Framework Core, and SQL Server.
 
 ## 🏗️ Architecture Overview
 
 This project demonstrates a clean implementation of:
 - **Domain-Driven Design (DDD)** with clear domain boundaries
-- **Modular Monolith** architecture for scalability
 - **Clean Architecture** principles with proper separation of concerns
 - **CQRS** patterns with MediatR
 - **Entity Framework Core** with SQL Server
@@ -16,21 +15,17 @@ This project demonstrates a clean implementation of:
 
 ```
 Library/
-├── Library.API/              # API Layer (Controllers, Configuration)
-├── Library.Application/      # Application Layer (Services, DTOs, Interfaces)
-├── Library.Domain/          # Domain Layer (Entities, Value Objects, Events)
-├── Library.Infrastructure/   # Infrastructure Layer (Data Access, Repositories)
-├── Library.Tests.Unit/      # Unit Tests
-└── Library.Tests.Integration/ # Integration Tests
+├── API/              # API Layer (Controllers, Configuration)
+├── Application/      # Application Layer (Services, DTOs, Interfaces)
+├── Domain/          # Domain Layer (Entities, Value Objects, Events)
+├── Infrastructure/   # Infrastructure Layer (Data Access, Repositories)
+├── Tests.Unit/      # Unit Tests
+├── Tests.SystemTests/      # System Tests
+└── Tests.Integration/ # Integration Tests
+
 ```
 
 ## 🚀 Features
-
-### Warm-up Tasks ✅
-1. **Check if Book ID is Power of Two** - Efficient bit manipulation algorithm
-2. **Reverse Book Title** - String manipulation with proper handling
-3. **Generate Book Title Replicas** - Memory-efficient string concatenation
-4. **List Odd-Numbered Book IDs** - Generate odd numbers 1-100 for limited editions
 
 ### Core Library System ✅
 - **Book Management** - CRUD operations with advanced search capabilities
